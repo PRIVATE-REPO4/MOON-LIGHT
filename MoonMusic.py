@@ -378,13 +378,13 @@ With Your ☛ Other Friends.**"""
             [
                 [
                     InlineKeyboardButton(
-                        text="🥀 Add Me In Your Chat ✨",
+                        text="𖤍 Add Me In Your Chat ",
                         url=f"https://t.me/{bot.me.username}?startgroup=true",
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        text="🌺 Open Command List 🌷",
+                        text=" 𖤍 Open Command List ",
                         callback_data="open_command_list",
                     )
                 ],
@@ -1103,7 +1103,7 @@ async def stream_audio_or_video(client, message):
                 )
                 caption = f"""**✅ Added To Queue At :** `#{position}`
 
-**🥀 Title:** {title}
+**❤️ Title:** {title}
 **🐬 Duration:** {duration}
 **🦋 Stream Type:** {stream_type}
 **👾 Requested By:** {requested_by}"""
@@ -1210,7 +1210,7 @@ async def stream_audio_or_video(client, message):
                 )
                 caption = f"""**✅ Started Streaming On VC.**
 
-**🥀 Title:** {title}
+**❤️ Title:** {title}
 **🐬 Duration:** {duration}
 **🦋 Stream Type:** {stream_type}
 **👾 Requested By:** {requested_by}"""
