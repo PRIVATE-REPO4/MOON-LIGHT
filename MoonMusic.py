@@ -203,8 +203,8 @@ async def main():
         LOGGER.info(f"🚫 Assistant Error: {e}")
         sys.exit()
     try:
-        await app.join_chat("AdityaServer")
-        await app.join_chat("AdityaDiscus")
+        await app.join_chat("untold_coder")
+        await app.join_chat("untold_coder")
     except Exception:
         pass
     if LOG_GROUP_ID != 0:
@@ -221,7 +221,7 @@ async def main():
     LOGGER.info("✅ PyTgCalls Started.")
     await asyncio.sleep(1)
     LOGGER.info("✅ Sucessfully Hosted Your Bot !!")
-    LOGGER.info("✅ Now Do Visit: @AdityaServer !!")
+    LOGGER.info("✅ Now Do Visit: @untold_coder !!")
     await idle()
 
 
