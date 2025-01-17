@@ -900,16 +900,21 @@ async def change_stream(chat_id):
 **🐬 Duration:** {duration}
 **🦋 Stream Type:** {stream_type}
 **👾 Requested By:** {requested_by}"""
-    buttons = InlineKeyboardMarkup(
+    buttons = [
+       [
+            InlineKeyboardButton(
+                text=f"{played} {bar} {dur}",
+                callback_data="GetTimer",
+            )
+        ], 
         [
-            [
-                InlineKeyboardButton(
-                    text="🗑️ Close",
-                    callback_data="stream_markup_timer",
-                )
-            ],
-        ]
-    )
+            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+        ],
+    ]
     return await bot.send_photo(chat_id, thumbnail, caption, reply_markup=buttons)
 
 
