@@ -1361,7 +1361,7 @@ With Your ☛ Other Friends.**"""
             [
                 InlineKeyboardButton(
                     text="🌺 Open Repository Link 🦋",
-                    url="https://github.com/AdityaHalder/AdityaPlayer",
+                    url="https://github.com/PRIVATE-REPO4/MOON-LIGHT",
                 )
             ],
             [
@@ -1390,12 +1390,12 @@ async def update_repo_latest(client, message):
         return await response.edit("Git Command Error")
     except InvalidGitRepositoryError:
         return await response.edit("Invalid Git Repsitory")
-    to_exc = f"git fetch origin aditya &> /dev/null"
+    to_exc = f"git fetch origin main &> /dev/null"
     os.system(to_exc)
     await asyncio.sleep(7)
     verification = ""
     REPO_ = repo.remotes.origin.url.split(".git")[0]  # main git repository
-    for checks in repo.iter_commits(f"HEAD..origin/aditya"):
+    for checks in repo.iter_commits(f"HEAD..origin/main"):
         verification = str(checks.count())
     if verification == "":
         return await response.edit("Bot is up-to-date!")
@@ -1421,7 +1421,7 @@ async def update_repo_latest(client, message):
         f"{nrs.text}\n\nBot was updated successfully! Now, wait for 1 - 2 mins until the bot reboots!"
     )
     os.system("pip3 install -r requirements.txt --force-reinstall")
-    os.system(f"kill -9 {os.getpid()} && python3 -m AdityaHalder")
+    os.system(f"kill -9 {os.getpid()} && python3 -m MoonMusic")
     sys.exit()
     return
 
@@ -1433,7 +1433,7 @@ async def check_bot_stats(client, message):
     except:
         pass
     photo = START_IMAGE_URL
-    caption = "**⏤͟͞ADITYA PLAYER STATS ༗**"
+    caption = "**⏤͟͞Moon PLAYER STATS ༗**"
     buttons = InlineKeyboardMarkup(
         [
             [
