@@ -1,18 +1,18 @@
 {
-  "name": "AdityaPlayer",
+  "name": "MoonMusic",
   "description": "An advanced & powerfull vc streaaming bot for telegram.",
   "keywords": [
     "musicbot",
     "vcbot",
     "musicplayer"
   ],
-  "repository": "https://github.com/adityahalder/adityaplayer",
+  "repository": "https://github.com/PRIVATE-REPO4/MOON-LIGHT",
   "logo": "https://envs.sh/9oZ.jpg",
   "stack": "container",
   "env": {
     "API_ID": {
       "description": "Get it from my telegram chat group.",
-      "value": "12380656",
+      "value": "22222",
       "required": true
     },
     "API_HASH": {
