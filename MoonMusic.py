@@ -896,16 +896,12 @@ async def change_stream(chat_id):
     await add_active_media_chat(chat_id, stream_type)
     caption = f"""**✅ Started Streaming On VC.**
 
-**🥀 Title:** {title}
+**❤️ Title:** {title}
 **🐬 Duration:** {duration}
 **🦋 Stream Type:** {stream_type}
 **👾 Requested By:** {requested_by}"""
     buttons = [
-       [
-            InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
-            )
+        [
         ], 
         [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
