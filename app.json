@@ -12,7 +12,7 @@
   "env": {
     "API_ID": {
       "description": "Get it from my telegram chat group.",
-      "value": "22222",
+      "value": "",
       "required": true
     },
     "API_HASH": {
@@ -21,11 +21,11 @@
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "Get it from botfather.",
+      "description": "5418725646:AAG3txvbtPFvBl2_sxC1TIuZs6A_PlgHJmI",
       "required": true
     },
     "STRING_SESSION": {
-      "description": "Generate pyrogram v2 string session and paste here.",
+      "description": "BQGrZiMAWaJYVyqh_yBkAnEHtHkclEL9lRXo0RKXuzP6NP0PUJq9F3cyJx7zXnGtfQ5ngwRbXP1Ov81TnpYsNP-RtjHMKMytLNyzGI5V5K9eQpCyiHqdff9aqNKK_OgaO99mC4z5dM8bubUcYQ4wRueBmZ4OaJpECPK6itHrMQlWmxXOdU4iaWjxwVArFBkPIaP1M2JpXq_S3LDS__Fyl9sZn0zgrqe_IEfTO6Z6GkbzappRuelp-sTgIJ2wd6UWBeAqlBua4Gh5hlE_8ngIYhUDacYvbqu88Mawoi1zpj4nXFkl5gGjZ1BhAXDsM6odSqjTD8BWe_VOdqXYxo7vYbnZ7aSG8QAAAAHlyy_cAA",
       "required": true
     },
     "OWNER_ID": {
@@ -33,11 +33,11 @@
       "required": true
     },
     "LOG_GROUP_ID": {
-      "description": "Provide an chat_id for logs.",
+      "description": "-1001550054357",
       "required": true
     },
     "MONGO_DB_URL": {
-      "description": "Paste here your mongodb url.",
+      "description": "mongodb+srv://yasircpr:zeo1122@cluster0.p1rl9bl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
       "required": true
     },
     "START_IMAGE_URL": {
