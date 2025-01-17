@@ -1,55 +1,81 @@
 {
-  "name": "MoonMusic",
-  "description": "An advanced & powerfull vc streaaming bot for telegram.",
-  "keywords": [
-    "musicbot",
-    "vcbot",
-    "musicplayer"
-  ],
-  "repository": "https://github.com/PRIVATE-REPO4/MOON-LIGHT",
-  "logo": "https://envs.sh/9oZ.jpg",
-  "stack": "container",
-  "env": {
-    "API_ID": {
-      "description": "Get it from my telegram chat group.",
-      "value": "",
-      "required": true
+    "name": "𝐒𝐚𝐧𝐤𝐢 𝐌𝐮𝐬𝐢𝐜",
+    "description": "𝑨𝒏 𝑨𝒅𝒗𝒂𝒏𝒄𝒆𝒅 𝑨𝒏𝒅 𝑺𝒖𝒑𝒆𝒓𝒇𝒂𝒔𝒕 𝑨𝒖𝒅𝒊𝒐/𝑽𝒊𝒅𝒆𝒐 𝑷𝒍𝒂𝒚𝒆𝒓 𝑩𝒐𝒕 𝑭𝒐𝒓 𝑻𝒆𝒍𝒆𝒈𝒓𝒂𝒎 𝑽𝑪.",
+    "logo": "https://graph.org/file/dd581dd6d8f8f7ea00d16.jpg",
+    "keywords": [
+        "musicbot",
+        "telegram bot",
+        "pyrogram"
+    ],
+    "repository": "https://github.com/PRIVATE-REPO4/MOON-LIGHT",
+    "success_url": "https://t.me/AdityaDiscus",
+    "env": {
+        "API_ID": {
+            "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑨𝒑𝒊 𝑰𝑫",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑨𝒑𝒊 𝑯𝒂𝒔𝒉",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑩𝒐𝒕 𝑻𝒐𝒌𝒆𝒏",
+            "required": true
+        },
+        "STRING_SESSION": {
+            "description": "𝑬𝒏𝒕𝒆𝒓 𝑷𝒚𝒓𝒐𝒈𝒓𝒂𝒎 𝑺𝒕𝒓𝒊𝒏𝒈 𝑺𝒔𝒆𝒔𝒔𝒊𝒐𝒏 𝑶𝒇 𝒀𝒐𝒖𝒓 𝑨𝒔𝒔𝒊𝒔𝒕𝒂𝒏𝒕 𝑰𝑫",
+            "required": true
+        },
+        "DURATION_LIMIT": {
+            "description": "𝑺𝒐𝒏𝒈 𝑫𝒖𝒓𝒂𝒕𝒊𝒐𝒏 𝑳𝒊𝒎𝒊𝒕 (𝑴𝒊𝒏𝒖𝒕𝒆𝒔)",
+            "required": true,
+            "value": "60"
+        },
+        "MONGO_DB_URL": {
+            "description": "𝑬𝒏𝒕𝒆𝒓 𝑴𝒐𝒏𝒈𝒐 𝑫𝒂𝒕𝒂𝒃𝒂𝒔𝒆 𝑼𝑹𝑳",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "𝑻𝒆𝒍𝒆𝒈𝒓𝒂𝒎 𝑼𝒔𝒆𝒓 𝑰𝑫 𝑶𝒇 𝑩𝒐𝒕 𝑶𝒘𝒏𝒆𝒓",
+            "required": true
+        },
+        "LOG_GROUP_ID": {
+            "description": "𝑩𝒐𝒕 𝑳𝒐𝒈𝒈𝒆𝒓 𝑮𝒓𝒐𝒖𝒑 𝑰𝑫",
+            "required": true
+        },
+        "MUSIC_BOT_NAME": {
+            "description": "𝑴𝒖𝒔𝒊𝒄 𝑩𝒐𝒕 𝑵𝒂𝒎𝒆 (𝑼𝒔𝒆 𝑵𝒐𝒓𝒎𝒂𝒍 𝑭𝒐𝒏𝒕)",
+            "required": true,
+            "value": "Aditya Player"
+        },
+        "SUPPORT_CHANNEL": {
+            "description": "𝒀𝒐𝒖𝒓 𝑻𝒆𝒍𝒆𝒈𝒓𝒂𝒎 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑳𝒊𝒏𝒌 𝑰𝒇 𝒀𝒐𝒖 𝑯𝒂𝒗𝒆 𝑬𝒍𝒔𝒆 𝑳𝒆𝒂𝒗𝒆 𝑰𝒕 𝑨𝒔 𝑫𝒆𝒇𝒂𝒖𝒍𝒕",
+            "required": false,
+            "value": "https://t.me/adityaserver"
+        },
+        "SUPPORT_GROUP": {
+            "description": "𝒀𝒐𝒖𝒓 𝑻𝒆𝒍𝒆𝒈𝒓𝒂𝒎 𝑮𝒓𝒐𝒖𝒑 𝑳𝒊𝒏𝒌 𝑰𝒇 𝒀𝒐𝒖 𝑯𝒂𝒗𝒆 𝑬𝒍𝒔𝒆 𝑳𝒆𝒂𝒗𝒆 𝑰𝒕 𝑨𝒔 𝑫𝒆𝒇𝒂𝒖𝒍𝒕",
+            "required": false,
+            "value": "https://t.me/adityadiscus"
+        }
     },
-    "API_HASH": {
-      "description": "The number of processes to run.",
-      "value": "d927c13beaaf5110f25c505b7c071273",
-      "required": true
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
     },
-    "BOT_TOKEN": {
-      "description": "5418725646:AAG3txvbtPFvBl2_sxC1TIuZs6A_PlgHJmI",
-      "required": true
-    },
-    "STRING_SESSION": {
-      "description": "BQGrZiMAWaJYVyqh_yBkAnEHtHkclEL9lRXo0RKXuzP6NP0PUJq9F3cyJx7zXnGtfQ5ngwRbXP1Ov81TnpYsNP-RtjHMKMytLNyzGI5V5K9eQpCyiHqdff9aqNKK_OgaO99mC4z5dM8bubUcYQ4wRueBmZ4OaJpECPK6itHrMQlWmxXOdU4iaWjxwVArFBkPIaP1M2JpXq_S3LDS__Fyl9sZn0zgrqe_IEfTO6Z6GkbzappRuelp-sTgIJ2wd6UWBeAqlBua4Gh5hlE_8ngIYhUDacYvbqu88Mawoi1zpj4nXFkl5gGjZ1BhAXDsM6odSqjTD8BWe_VOdqXYxo7vYbnZ7aSG8QAAAAHlyy_cAA",
-      "required": true
-    },
-    "OWNER_ID": {
-      "description": "Paste user_id of bot owner.",
-      "required": true
-    },
-    "LOG_GROUP_ID": {
-      "description": "-1001550054357",
-      "required": true
-    },
-    "MONGO_DB_URL": {
-      "description": "mongodb+srv://yasircpr:zeo1122@cluster0.p1rl9bl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
-      "required": true
-    },
-    "START_IMAGE_URL": {
-      "description": "An image url for your bot.",
-      "value": "https://graph.org/file/918101d0ad6b1207e6201.png",
-      "required": true
+    "stack": "container"
     }
-  },
-  "formation": {
-    "web": {
-      "quantity": 1,
-      "size": "basic"
-    }
-  }
-}
