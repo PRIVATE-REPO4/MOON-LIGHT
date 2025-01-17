@@ -1395,7 +1395,7 @@ async def update_repo_latest(client, message):
     await asyncio.sleep(7)
     verification = ""
     REPO_ = repo.remotes.origin.url.split(".git")[0]  # main git repository
-    for checks in repo.iter_commits(f"HEAD..origin/main"):
+    for checks in repo.iter_commits(f"HEAD..origin/moon"):
         verification = str(checks.count())
     if verification == "":
         return await response.edit("Bot is up-to-date!")
@@ -1404,7 +1404,7 @@ async def update_repo_latest(client, message):
         format,
         "tsnrhtdd"[(format // 10 % 10 != 1) * (format % 10 < 4) * format % 10 :: 4],
     )
-    for info in repo.iter_commits(f"HEAD..origin/aditya"):
+    for info in repo.iter_commits(f"HEAD..origin/moon"):
         updates += f"<b>➣ #{info.count()}: [{info.summary}]({REPO_}/commit/{info}) by -> {info.author}</b>\n\t\t\t\t<b>➥ Commited on:</b> {ordinal(int(datetime.fromtimestamp(info.committed_date).strftime('%d')))} {datetime.fromtimestamp(info.committed_date).strftime('%b')}, {datetime.fromtimestamp(info.committed_date).strftime('%Y')}\n\n"
     _update_response_ = "<b>A new update is available for the Bot!</b>\n\n➣ Pushing Updates Now</code>\n\n**<u>Updates:</u>**\n\n"
     _final_updates_ = _update_response_ + updates
